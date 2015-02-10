@@ -30,6 +30,14 @@ var fruits2 = [blueberries, grapes, redcurrent]
 fruits2.forEach(function (item) {
     document.write ('<dl>');
     
+    document.write ('<dt>name:<dt>');
+    document.write ('<dd>'+item.name + '</dd>');
+    
+    
+    document.write ('<dt>latin:<dt>');
+    document.write ('<dd>'+item.latin + '</dd>');
+    
+    
     document.write ('<dt>energy:</dt>');
     document.write ('<dd>'+ item.energy + '</dd>');
     
@@ -39,8 +47,6 @@ fruits2.forEach(function (item) {
     document.write ('<dt>protein:<dt>');
     document.write ('<dd>'+item.protein + '</dd>');
     
-    document.write ('<dt>name:<dt>');
-    document.write ('<dd>'+item.name + '</dd>');
     
     
 
