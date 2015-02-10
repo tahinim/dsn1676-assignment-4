@@ -1,5 +1,5 @@
-
 var blueberries = {
+    name:'blueberries',
     latin: 'Vaccinium corymbosum',
     growsonshrubs: true,
     energy: '240kJ',
@@ -8,6 +8,7 @@ var blueberries = {
 };
 
 var grapes = {
+    name:'grapes',
     latin: 'Vitis vinifera',
     growsonshrubs: false,
     energy: '228kJ',
@@ -16,6 +17,7 @@ var grapes = {
 };
 
 var redcurrent = {
+    name: 'redcurrent',
     latin: 'ribes rubrum',
     growsonshrubs: true,
     energy: '234 kJ',
@@ -25,34 +27,24 @@ var redcurrent = {
 
 var fruits2 = [blueberries, grapes, redcurrent]
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var dinos2 = [trex, stego];
-
-// console.log ( dinos2[1].age )
-
-dinos2.forEach(function (item) {
+fruits2.forEach(function (item) {
     document.write ('<dl>');
-    document.write ('<dt>Age:<dt>');
-    document.write('<dd>'+ item.age +'</dd>');
+    
+    document.write ('<dt>energy:</dt>');
+    document.write ('<dd>'+ item.energy + '</dd>');
+    
+    document.write ('<dt>carbohydrates:<dt>');
+    document.write ('<dd>'+ item.carbohydrates + '</dd>');
+    
+    document.write ('<dt>protein:<dt>');
+    document.write ('<dd>'+item.protein + '</dd>');
+    
+    document.write ('<dt>name:<dt>');
+    document.write ('<dd>'+item.name + '</dd>');
+    
+    
+
     document.write('</dl>');
 
+    
 });
