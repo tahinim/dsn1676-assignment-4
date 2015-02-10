@@ -54,3 +54,27 @@ fruits2.forEach(function (item) {
 
     
 });
+
+    var writeFruits = function (allFruits) {
+        allFruits.forEach (function (item) {
+            
+        document.write ('<dl>');
+            
+        document.write ('<dt>name:<dt>');
+        document.write ('<dd>'+item.name + '</dd>');
+        
+        document.write ('<dt>latin:<dt>');
+        document.write ('<dd>'+item.latin + '</dd>');
+            
+        document.write ('<dt>energy:<dt>');
+        document.write ('<dd>'+item.energy + '</dd>');
+            
+        document.write ('<dt>carbohydrates:<dt>');
+        document.write ('<dd>'+item.carbohydrates + '</dd>');
+            
+        document.write ('<dt>protein:<dt>');
+        document.write ('<dd>'+item.protein + '</dd>');
+        });
+        
+    };
+
